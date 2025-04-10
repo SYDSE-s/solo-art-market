@@ -58,7 +58,7 @@ class DashboardController extends Controller
         $product_photo->move(public_path('product_photo'), $file_name);
 
         Product::create([
-            'member_id' => Session::get('member.id'),
+            'member_id' => Auth::user()->id,
             'name' => $validated['name'],
             'price' => $validated['price'],
             'product_category' => $validated['product_category'],
