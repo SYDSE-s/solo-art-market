@@ -24,7 +24,7 @@
                     <div class="card-body">
                         <div class="wrap">
                             <img src="{{ asset('img/kta.png') }}" height="100">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eaque assumenda adipisci quidem illo distinctio asperiores dolores nisi veritatis explicabo reiciendis nobis repellat praesentium amet corporis, ad at? Commodi, quidem.
+                            hello world
                         </div>
                     </div>
                 </div>
