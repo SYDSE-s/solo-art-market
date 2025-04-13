@@ -13,14 +13,7 @@ return new class extends Migration
     {
         Schema::create('product_categories', function (Blueprint $table) {
             $table->id();
-            $table->string('kuliner kering')->default('');
-            $table->string('kuliner basah');
-            $table->string('fashion');
-            $table->string('jasa');
-            $table->string('craft');
-            $table->string('drink');
-            $table->string('beauty');
-            $table->string('furniture');
+            $table->string('name');
             $table->timestamps();
         });
     }

@@ -18,7 +18,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '1',
                 'name' => 'Bolu Tiga Rasa',
                 'price' => '25.000',
-                'product_category' => 'kuliner basah',
+                'product_category_id' => '2',
                 'description' => 'Bolu khas Solo',
                 'product_photo' => 'bolu-tiga-rasa.jpg'
             ],
@@ -27,7 +27,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '1',
                 'name' => 'Bolu Kukus',
                 'price' => '20.000',
-                'product_category' => 'kuliner basah',
+                'product_category_id' => '2',
                 'description' => 'Bolu khas Solo',
                 'product_photo' => 'bolu-kukus.jpg'
             ],
@@ -36,7 +36,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '1',
                 'name' => 'Bolu Gulung',
                 'price' => '22.000',
-                'product_category' => 'kuliner basah',
+                'product_category_id' => '2',
                 'description' => 'Bolu khas Solo',
                 'product_photo' => 'bolu-gulung.jpg'
             ],
@@ -45,7 +45,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '1',
                 'name' => 'Bolu coklat',
                 'price' => '22.000',
-                'product_category' => 'kuliner basah',
+                'product_category_id' => '2',
                 'description' => 'Bolu khas Solo',
                 'product_photo' => 'bolu-coklat.jpg'
             ],
@@ -54,7 +54,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '1',
                 'name' => 'Bolu Keju',
                 'price' => '22.000',
-                'product_category' => 'kuliner basah',
+                'product_category_id' => '2',
                 'description' => 'Bolu khas Solo',
                 'product_photo' => 'bolu-keju.jpg'
             ],
@@ -63,7 +63,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '2',
                 'name' => 'Aneka Cookies',
                 'price' => '25.000',
-                'product_category' => 'kuliner kering',
+                'product_category_id' => '1',
                 'description' => 'Cookies',
                 'product_photo' => 'cookies.jpg'
             ],
@@ -72,7 +72,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '2',
                 'name' => 'Pastry Strawbery Jam',
                 'price' => '28.000',
-                'product_category' => 'kuliner kering',
+                'product_category_id' => '1',
                 'description' => 'Kue pastry dengan selai strawbery',
                 'product_photo' => 'pastry.jpg'
             ],
@@ -81,7 +81,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '3',
                 'name' => 'Sweater Polos',
                 'price' => '99.000',
-                'product_category' => 'fashion',
+                'product_category_id' => '3',
                 'description' => 'Sweater berbahan lembut dan tebal',
                 'product_photo' => 'sweater.jpg'
             ],
@@ -90,7 +90,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '3',
                 'name' => 'Sweater Hitam Polos',
                 'price' => '102.000',
-                'product_category' => 'fashion',
+                'product_category_id' => '3',
                 'description' => 'Sweater berbahan lembut dan tebal',
                 'product_photo' => 'sweater2.jpg'
             ],
@@ -99,7 +99,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '3',
                 'name' => 'Sweater Cristmas',
                 'price' => '85.000',
-                'product_category' => 'fashion',
+                'product_category_id' => '3',
                 'description' => 'Sweater berbahan lembut dan tebal',
                 'product_photo' => 'sweater3.jpg'
             ],
@@ -108,7 +108,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '5',
                 'name' => 'Tas Bambu',
                 'price' => '49.000',
-                'product_category' => 'craft',
+                'product_category_id' => '5',
                 'description' => 'Kerajinan berkualitas tinggi',
                 'product_photo' => 'kerajinan-tas.jpeg'
             ],
@@ -117,7 +117,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '5',
                 'name' => 'Wadah Bambu',
                 'price' => '35.000',
-                'product_category' => 'craft',
+                'product_category_id' => '5',
                 'description' => 'Kerajinan berkualitas tinggi',
                 'product_photo' => 'kerajinan-wadah.jpg'
             ],
@@ -126,7 +126,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '5',
                 'name' => 'Pot',
                 'price' => '49.000',
-                'product_category' => 'craft',
+                'product_category_id' => '5',
                 'description' => 'Kerajinan berkualitas tinggi',
                 'product_photo' => 'kerajinan-pot.jpg'
             ],
@@ -134,7 +134,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '8',
                 'name' => 'Set Kursi Dinner',
                 'price' => '400.000',
-                'product_category' => 'furniture',
+                'product_category_id' => '8',
                 'description' => 'Satu set dinner, include kursi dan meja',
                 'product_photo' => 'chair.jpg'
             ],
@@ -142,7 +142,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '8',
                 'name' => 'Sofa',
                 'price' => '450.000',
-                'product_category' => 'furniture',
+                'product_category_id' => '8',
                 'description' => 'Satu Set sofa empuk',
                 'product_photo' => 'sofa.jpg'
             ],
@@ -150,7 +150,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '7',
                 'name' => 'Set Facial Skin Care',
                 'price' => '250.000',
-                'product_category' => 'beauty',
+                'product_category_id' => '7',
                 'description' => 'Satu set perawatan kulit wajah',
                 'product_photo' => 'beauty.jpg'
             ],
@@ -158,7 +158,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '6',
                 'name' => 'Choco Boba Ice',
                 'price' => '15.000',
-                'product_category' => 'drink',
+                'product_category_id' => '6',
                 'description' => 'Minuman coklat manis dengan toping boba',
                 'product_photo' => 'boba.jpg'
             ],
@@ -166,7 +166,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '6',
                 'name' => 'Avocado Smoothies',
                 'price' => '17.000',
-                'product_category' => 'drink',
+                'product_category_id' => '6',
                 'description' => 'Smoothies Avocado',
                 'product_photo' => 'avocado-smoothies.jpg'
             ],
@@ -174,7 +174,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '6',
                 'name' => 'Ice Tea',
                 'price' => '3.000',
-                'product_category' => 'drink',
+                'product_category_id' => '6',
                 'description' => 'Es Teh seger',
                 'product_photo' => 'ice-tea.jpg'
             ],
@@ -182,7 +182,7 @@ class ProductSeeder extends Seeder
                 'member_id' => '4',
                 'name' => 'Gaskeun Delivery',
                 'price' => '~',
-                'product_category' => 'jasa',
+                'product_category_id' => '4',
                 'description' => 'Delivery makanan',
                 'product_photo' => 'gaskeun.png'
             ],
