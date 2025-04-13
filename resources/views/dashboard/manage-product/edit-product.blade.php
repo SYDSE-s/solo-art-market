@@ -66,9 +66,9 @@
                                 <div class="col-sm-10">
                                     <select id="product_category" name="product_category"
                                         class="register-input @error('product_category') is-invalid @enderror form-select">
-                                        @if ($product->product_category)
-                                            <option value="{{ $product->product_category }}">
-                                                {{ $product->product_category }}
+                                        @if ($product->productCategory->name)
+                                            <option value="{{ $product->productCategory->name }}">
+                                                {{ $product->productCategory->name }}
                                             </option>
                                         @elseif (old('product_category'))
                                             <option value="{{ old('product_category') }}">{{ old('product_category') }}
@@ -76,14 +76,9 @@
                                         @else
                                             <option value=""></option>
                                         @endif
-                                        <option value="kuliner kering">kuliner kering</option>
-                                        <option value="kuliner basah">kuliner basah</option>
-                                        <option value="fashion">fashion</option>
-                                        <option value="jasa">jasa</option>
-                                        <option value="craft">craft</option>
-                                        <option value="drink">drink</option>
-                                        <option value="beauty">beauty</option>
-                                        <option value="furniture">furniture</option>
+                                        @foreach ($productCategory as $item)
+                                            <option value="{{ $item->name }}">{{ $item->name }}</option>
+                                        @endforeach
                                     </select>
                                     @error('product_category')
                                         <span class="invalid-feedback" role="alert">

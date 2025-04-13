@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
         btn.addEventListener("click", () => {
             const category = btn.getAttribute("data-value");
             const active = document.querySelector(".btn-active");
-            console.log(category)
             if (active) {
                 active.classList.remove("btn-active");
             }
             btn.classList.add("btn-active");
+            // console.log(category);
 
             productItem.forEach((item) => {
                 if (item.getAttribute("data-category") === category) {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     window.location.href = "/product";
                 } else {
                     item.classList.add("hide");
-                    console.log(item.getAttribute("data-category"))
+                    // console.log(item.getAttribute("data-category"))
                 }
             });
         });
