@@ -31,7 +31,7 @@ class ProductController extends Controller
     {
         $product = Product::with('member')->where('id', $id)->first();
 
-        return view('product.detail', [
+        return view('product.detail2', [
             'product' => $product
         ]);
     }

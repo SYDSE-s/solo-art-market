@@ -24,7 +24,7 @@ use App\Http\Controllers\KTAController;
             */
 
 // test route (test feature purposes)
-Route::get('/test', function() {
+Route::get('/test', function () {
     return view('test');
 });
 
@@ -38,7 +38,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 // product
 Route::get('/product', [ProductController::class, 'index'])->name('product');
-Route::get('/product/details{id}', [ProductController::class, 'detail'])->name('product-detail');
+Route::get('/product/details{id}', [ProductController::class, 'detail'])->name('product-detail'); //route detail yang lama
 Route::post('/search-product', [ProductController::class, 'search'])->name('search-product');
 
 // Register member
@@ -46,7 +46,7 @@ Route::get('/member/register', [RegisterMemberController::class, 'index'])->name
 Route::post('/member/register', [RegisterMemberController::class, 'create'])->name('register[post]');
 
 // Dashboard
-Route::middleware(['auth'])->group(function() {
+Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/manage-product', [DashboardController::class, 'manageProduct'])->name('manage-product');
     Route::get('/add-product', [DashboardController::class, 'addProductV'])->name('add-product-v');
@@ -67,4 +67,3 @@ Route::post('/generate-qrcode/{id}', [QrCodeController::class, 'generate'])->nam
 
 // Route::post('/api/midtrans/token', 'App\Http\Controllers\MidtransController@getToken');
 // Route::post('/api/midtrans/notification', 'App\Http\Controllers\MidtransController@handleNotification');
-
