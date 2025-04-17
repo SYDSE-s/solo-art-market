@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Member;
 use App\Models\Product;
+use App\Models\ProductCategory;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Session;
 
 class DashboardController extends Controller
 {
+
+    // test github workflow
+    
     // dashboard index (member-data)
     public function index()
     {
@@ -55,7 +59,7 @@ class DashboardController extends Controller
         $product_photo->move(public_path('product_photo'), $file_name);
 
         Product::create([
-            'member_id' => Session::get('member.id'),
+            'member_id' => Auth::user()->id,
             'name' => $validated['name'],
             'price' => $validated['price'],
             'product_category' => $validated['product_category'],
@@ -69,9 +73,11 @@ class DashboardController extends Controller
 
     public function editProductV($id)   // view
     {
+        $product_category = ProductCategory::all();
         $product = Product::findOrFail($id);
         return view('dashboard.manage-product.edit-product', [
-            'product' => $product
+            'product' => $product,
+            'productCategory' => $product_category
         ]);
     }
 

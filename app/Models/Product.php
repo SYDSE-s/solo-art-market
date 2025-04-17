@@ -19,19 +19,18 @@ class Product extends Model
         'member_id'
     ];
 
-    /**
-     * Get the member that owns the product
-     */
     public function member()
     {
         return $this->belongsTo(Member::class);
     }
 
-    /**
-     * Get the order details for the product
-     */
     public function orderDetails()
     {
         return $this->hasMany(OrderDetail::class);
+    }
+
+    public function productCategory()
+    {
+        return $this->belongsTo(ProductCategory::class);
     }
 }

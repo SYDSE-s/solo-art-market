@@ -28,14 +28,9 @@
             </form>
             <div class="filter-category col-lg-9">
                 <button class="filter-btn btn btn-white  btn-active" data-value="semua">semua</button>
-                <button class="filter-btn btn btn-white" data-value="kuliner kering">kuliner kering</button>
-                <button class="filter-btn btn btn-white" data-value="kuliner basah">kuliner basah</button>
-                <button class="filter-btn btn btn-white" data-value="fashion">Fashion</button>
-                <button class="filter-btn btn btn-white" data-value="jasa">jasa</button>
-                <button class="filter-btn btn btn-white" data-value="craft">craft</button>
-                <button class="filter-btn btn btn-white" data-value="drink">drink</button>
-                <button class="filter-btn btn btn-white" data-value="beauty">beauty</button>
-                <button class="filter-btn btn btn-white" data-value="furniture">furniture</button>
+                @foreach ($productCategories as $item)
+                    <button class="filter-btn btn btn-white" data-value="{{ $item->name }}">{{ $item->name }}</button>
+                @endforeach
             </div>
         </div>
         <div class="row gy-3 justify-content-between">
@@ -47,7 +42,7 @@
                                 class="text-violet">klik untuk kembali</a>
                         </h5>
                         @foreach ($filtered_product as $product)
-                            <div class="product-item col-6 col-lg-3" data-category="{{ $product->product_category }}"
+                            <div class="product-item col-6 col-lg-3" data-category="{{ $product->productCategory->name }}"
                                 data-id="{{ $product->id }}">
                                 <div class="card ">
                                     <div class="card-body p-2">
@@ -69,7 +64,7 @@
                         @endforeach
                     @else
                         @foreach ($products as $product)
-                            <div class="product-item col-6 col-lg-3" data-category="{{ $product->product_category }}"
+                            <div class="product-item col-6 col-lg-3" data-category="{{ $product->productCategory->name }}"
                                 data-id="{{ $product->id }}">
                                 <div class="card">
                                     <div class="card-body p-2">
