@@ -11,6 +11,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RegisterMemberController;
 use App\Http\Controllers\QrCodeController;
 use App\Http\Controllers\KTAController;
+use App\Http\Controllers\MapController;
 
 /*
             |--------------------------------------------------------------------------
@@ -68,3 +69,5 @@ Route::post('/generate-qrcode/{id}', [QrCodeController::class, 'generate'])->nam
 // Route::post('/api/midtrans/token', 'App\Http\Controllers\MidtransController@getToken');
 // Route::post('/api/midtrans/notification', 'App\Http\Controllers\MidtransController@handleNotification');
 
+// Map
+Route::get('/map', [MapController::class, 'index'])->name('map.distance');
